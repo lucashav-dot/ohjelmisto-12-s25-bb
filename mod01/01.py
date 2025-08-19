@@ -3,6 +3,7 @@ print("Terve!")
 print("Terve!")
 print("Terve!")
 print("Terve!")
+print("Terve!")
 print("hei, Lucas \n Havanko")
 
 print("======================================")

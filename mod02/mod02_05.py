@@ -1,6 +1,6 @@
-luku1 = input("levisköjen lukumäärä") #8512grammaa
-luku2 = input("naulojen lukumäärä") #425.6grammaa
-luku3 = input("luotien lukumäärä") #13.3grammaa
+luku1 = input("levisköjen lukumäärä: ") #8512grammaa
+luku2 = input("naulojen lukumäärä: ") #425.6grammaa
+luku3 = input("luotien lukumäärä: ") #13.3grammaa
 
 #lukujen summa
 summa = (int(luku1)*8512+int(luku2)*425.6+int(luku3)*13.3)

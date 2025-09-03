@@ -1,5 +1,4 @@
 import random
-
 lkm = int(input("Anna arpakuutioiden lukumäärä: "))
 summa = 0
 

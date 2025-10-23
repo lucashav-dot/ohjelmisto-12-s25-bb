@@ -4,6 +4,8 @@ class Car:
         self.trip = 0
         self.top_speed = 142
         self.register_number = "ABC-123"
+
+
     def accelerate1(self):
         self.speed += 30
     def accelerate2(self):

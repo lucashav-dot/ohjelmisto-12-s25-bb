@@ -18,6 +18,7 @@ class Car:
         self.trip += self.speed * time
         return self.trip
 
+
 car1 = Car()
 car1.accelerate1()
 car1.current_speed()

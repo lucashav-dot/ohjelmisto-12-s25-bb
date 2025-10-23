@@ -7,7 +7,6 @@ class Car:
     def accelerate(self):
         self.speed += 1
 
-
 cars = []
 for i in range(5):
     cars.append(Car())

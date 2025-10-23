@@ -25,8 +25,8 @@ winner = None
 tunti = 0
 while not winner:
     tunti += 1
-
     print(f"Tunti: {tunti}")
+
     for car in cars:
         car.accelerate()
         car.trip_length()

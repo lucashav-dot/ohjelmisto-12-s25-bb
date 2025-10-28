@@ -25,13 +25,11 @@ class Kilpailu:
         self.autot = autot
 
     def tunti_kuluu(self):
-        """Kutsutaan kerran tunnissa: arpoo nopeuden muutokset ja kasvattaa matkaa."""
         for auto in self.autot:
             auto.accelerate()
             auto.drive()
 
     def tulosta_tilanne(self):
-        """Tulostaa kaikkien autojen tilanteen taulukkomuodossa."""
         print(f"\n{'Auto':<10}{'Huippu':<10}{'Nopeus':<10}{'Matka':<10}")
         print("-" * 40)
         for auto in self.autot:
@@ -39,21 +37,16 @@ class Kilpailu:
         print("-" * 40)
 
     def kilpailu_ohi(self):
-        """Palauttaa True, jos joku autoista on ajanut vähintään kilpailun pituuden."""
         for auto in self.autot:
             if auto.trip >= self.pituus:
                 return True
         return False
 
-
-# --- Pääohjelma ---
-# Luodaan autot
 cars = [Car(i) for i in range(1, 11)]
 
-# Luodaan kilpailu
 kilpailu = Kilpailu("Suuri romuralli", 8000, cars)
 
-# Simuloidaan kilpailua
+
 tunti = 0
 while not kilpailu.kilpailu_ohi():
     kilpailu.tunti_kuluu()
@@ -62,10 +55,8 @@ while not kilpailu.kilpailu_ohi():
         print(f"\n== Tilanne {tunti} tunnin jälkeen ==")
         kilpailu.tulosta_tilanne()
 
-# Kun kilpailu loppuu
 print("\nKilpailu on päättynyt! Lopputilanne:")
 kilpailu.tulosta_tilanne()
 
-# Selvitetään voittaja
 voittaja = max(cars, key=lambda c: c.trip)
 print(f"\nVoittaja on {voittaja.name} ({voittaja.top_speed} km/h), ajettu matka: {voittaja.trip:.1f} km")

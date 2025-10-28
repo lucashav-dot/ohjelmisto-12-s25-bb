@@ -9,7 +9,6 @@ class Hissi:
             print(f"Kerrosta {kerros} ei ole olemassa ({self.alin_kerros}-{self.ylin_kerros})")
             return
 
-
         while self.kerros < kerros:
             self.kerros_ylös()
         while self.kerros > kerros:

@@ -50,13 +50,12 @@ cars = [Car(i) for i in range(1, 11)]
 
 kilpailu = Kilpailu("Suuri romuralli", 8000, cars)
 
-
 tunti = 0
 while not kilpailu.kilpailu_ohi():
     kilpailu.tunti_kuluu()
     tunti += 1
     if tunti % 10 == 0:
-        print(f"\n== Tilanne {tunti} tunnin jälkeen ==")
+        print(f"\nTilanne {tunti} tunnin jälkeen")
         kilpailu.tulosta_tilanne()
 
 print("\nKilpailu on päättynyt! Lopputilanne:")

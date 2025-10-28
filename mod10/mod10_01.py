@@ -4,7 +4,6 @@ class Hissi:
         self.ylin_kerros = 7
         self.alin_kerros = 0
 
-
     def siirry_kerrokseen(self, kerros):
         for k in range(kerros):
             self.kerros += 1

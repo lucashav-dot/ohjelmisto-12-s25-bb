@@ -53,5 +53,4 @@ hissi.siirry_kerrokseen(9)
 hissi.kerros_ylös()
 hissi.kerros_alas()
 
-
 print(f"Hissin kerros on: {hissi.kerros}/{hissi.ylin_kerros}")

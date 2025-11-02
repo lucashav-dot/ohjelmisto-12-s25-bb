@@ -4,7 +4,6 @@ class Julkaisu:
         self.nimi = nimi
 
 
-
 class Kirja(Julkaisu):
     def __init__(self, nimi, kirjoittaja, sivumaara):
         super().__init__(nimi)

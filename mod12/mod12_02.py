@@ -6,6 +6,7 @@ lang = "fi"
 
 pyyntö = f"http://api.openweathermap.org/data/2.5/weather?q={city_name}&appid={API_key}&units=metric&lang={lang}"
 
+
 try:
     vastaus = requests.get(pyyntö)
     if vastaus.status_code==200:

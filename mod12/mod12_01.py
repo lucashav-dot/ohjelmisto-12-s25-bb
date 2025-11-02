@@ -5,6 +5,7 @@ import requests
 # Pyynnön malli: https://api.tvmaze.com/search/shows?q=girls
 pyyntö = "https://api.chucknorris.io/jokes/random"
 
+
 try:
     vastaus = requests.get(pyyntö)
     if vastaus.status_code==200:

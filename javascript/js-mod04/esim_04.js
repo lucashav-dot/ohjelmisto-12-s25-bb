@@ -33,6 +33,7 @@ fetch('pics.json').then(function (data) {
     console.error(error);
 });
 
+
 async function fetchPics(){
     const picsDiv = document.querySelector('#pics');
     try {

@@ -3,6 +3,7 @@ const form = document.getElementById('searchForm');
 form.addEventListener('submit', function(event) {
     event.preventDefault();
 
+
     const formData = new FormData(form);
     const searchQuery = formData.get('q');
 

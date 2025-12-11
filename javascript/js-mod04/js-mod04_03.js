@@ -43,6 +43,7 @@ async function fetchSeriesData(url) {
 function displayResults(data) {
     resultsContainer.innerHTML = '';
 
+
     if (data && data.length > 0) {
         data.forEach(item => {
             const show = item.show;

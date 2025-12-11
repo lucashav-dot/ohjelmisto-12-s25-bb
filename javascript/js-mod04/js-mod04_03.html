@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Series Search App</title>
+    <style>
+        body { font-family: sans-serif; }
+        #results { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-top: 20px; }
+        article { border: 1px solid #ccc; padding: 15px; width: 300px; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); }
+        article h2 { margin-top: 0; }
+        article img { max-width: 100%; height: auto; display: block; margin: 10px 0; }
+    </style>
+</head>
+<body>
+
+    <h1>TVMaze API Search</h1>
+    <p>Enter the name of a TV series to search:</p>
+
+    <form id="searchForm">
+        <input
+            type="text"
+            id="query"
+            name="q"
+            placeholder="e.g., The Office"
+            required
+        >
+
+        <input type="submit" value="Search">
+    </form>
+
+    <div id="results"></div>
+
+    <script src="js-mod04_03.js"></script>
+</body>
+</html>

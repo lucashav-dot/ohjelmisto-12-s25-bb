@@ -92,6 +92,7 @@ const picArray = [
   },
 ];
 
+
 const targetSection = document.getElementById('pictures');
 
 picArray.forEach(pic => {

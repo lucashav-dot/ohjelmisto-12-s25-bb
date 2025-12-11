@@ -14,6 +14,8 @@ const students = [
   },
 ];
 
+
+
 const targetSelect = document.getElementById('target');
 
 for (let i = 0; i < students.length; i++) {

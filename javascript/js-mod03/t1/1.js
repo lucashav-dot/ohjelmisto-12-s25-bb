@@ -6,4 +6,6 @@ targetList.innerHTML = `
     <li>Third item</li>
 `;
 
+
+
 targetList.classList.add('my-list');

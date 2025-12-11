@@ -1,6 +1,8 @@
 'use strict';
 const names = ['John', 'Paul', 'Jones'];
 
+
+
 const targetList = document.getElementById('target');
 
 let listHTML = '';

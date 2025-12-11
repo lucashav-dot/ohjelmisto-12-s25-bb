@@ -5,6 +5,9 @@ document.getElementById("demo").innerHTML = "Hello, " + person + "!";
 
 
 
+
+
+
 let num1 = parseInt(prompt("Enter the first number: "));
 let num2 = parseInt(prompt("Enter the second number: "));
 let num3 = parseInt(prompt("Enter the third number: "));

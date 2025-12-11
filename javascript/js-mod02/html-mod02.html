@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<h1>Mod02</h1>
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript testing</title>
+    <script src="js-mod02_01.js" defer></script>
+</head>
+<html>
+<body>
+
+<script>
+// Ask for number of participants
+let count = Number(prompt("How many participants?"));
+
+let participants = [];
+
+// Ask for participant names
+for (let i = 0; i < count; i++) {
+    let name = prompt(`Enter name of participant ${i + 1}:`);
+    participants.push(name);
+}
+
+// Sort names alphabetically
+participants.sort();
+
+// Print names in an ordered list (<ol>)
+document.write("<h3>Participants in alphabetical order:</h3>");
+document.write("<ol>");
+
+for (let i = 0; i < participants.length; i++) {
+    document.write("<li>" + participants[i] + "</li>");
+}
+
+document.write("</ol>");
+</script>
+
+
+<script>
+// Ask for 6 dog names
+let dogs = [];
+
+for (let i = 0; i < 6; i++) {
+    let name = prompt(`Enter the name of dog ${i + 1}:`);
+    dogs.push(name);
+}
+
+// Sort in reverse alphabetical order
+dogs.sort().reverse();
+
+// Print to <ul>
+document.write("<h3>Dog Names (Reverse Alphabetical Order):</h3>");
+document.write("<ul>");
+
+for (let i = 0; i < dogs.length; i++) {
+    document.write("<li>" + dogs[i] + "</li>");
+}
+
+document.write("</ul>");
+</script>
+
+</body>
+</html>
